@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Example validation (you can replace this with actual validation logic)
     if (username === "shabrina aulia kharisma" && password === "07072005") {
-      window.open('./index.html');
+      window.open('./main-page.html');
     } else {
       errorMessage.textContent = "Invalid username or password";
     }
