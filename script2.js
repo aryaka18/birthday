@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (username === "shabrina aulia kharisma" && password === "07072005") {
       window.open('./main-page.html');
     } else {
-      errorMessage.textContent = "Invalid username or password";
+      errorMessage.textContent = "masukinn yg bnrr";
     }
   });
 });
