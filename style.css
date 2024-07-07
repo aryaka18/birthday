@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik+Mono+One&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+body {
+  font-family: "Rubik Mono One", "QuickSand", sans-serif;
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #222222;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 1.5rem 1.5rem 0px;
+  gap: 15rem;
+  margin-inline: auto;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99999;
+  position: sticky;
+  top: 0;
+  background-color: #222222;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #f97300;
+  font-weight: 20;
+}
+
+.logo span {
+  color: white;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 5rem;
+  padding: 0;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+.navigation a {
+  padding: 0.5rem 1.5rem;
+  font-family: "QuickSand";
+  text-decoration: none;
+  border-radius: 999px;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.navigation li:hover a{
+  background-color: #636161;
+  border-radius: 20px;
+  color: white;
+}
+main {
+  display: flex;
+  width: 100%;
+  margin-inline: auto;
+  align-items: center;
+  max-width: 1200px;
+  padding: 2rem;
+  /* margin-top: 10rem; */
+  justify-content: center;
+  flex-direction: column;
+}
+#about {
+  display: flex;
+  flex-direction: row;
+  font-family: "QuickSand";
+  color: white;
+  margin-bottom: 25px;
+}
+#about img {
+  width: 20rem;
+  height: auto;
+  border-radius: 1.5rem;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "QuickSand";
+  margin-left: 8rem;
+
+}
+.home-content h2 {
+  margin: 0px 0px 4px 0px;
+}
+.orion {
+  color: #f97300;
+  font-family: "Rubik Mono One";
+  font-weight: 300;
+}
+.home-content span {
+  color: white;
+}
+
+button {
+  font-family: "QuickSand";
+  width: 12rem;
+  height: 3rem;
+  border-radius: 16px;
+  margin-top: 1rem;
+  background-color: white;
+  color: #222222;
+  font-weight: bold;
+  border-style: none;
+  cursor: pointer;
+}
+button a{
+  text-decoration: none;
+}
+.main-header {
+  font-size: 1.2rem;
+  color: white;
+}
+.main-header span {
+  color: #f97300;
+}
+#team {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accordion {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.accordion-item {
+  flex: 0 0 auto;
+  border: 1px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+.accordion-header {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.accordion-header img {
+  width: 100px;
+  height: 450px;
+  object-fit: cover;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.accordion-content p {
+  margin: 0;
+}
+
+
+
+
+
