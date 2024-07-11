@@ -23,8 +23,7 @@ body {
 .navbar {
   display: flex;
   width: 100%;
-  padding: 1.5rem 1.5rem 0px;
-  gap: 15rem;
+  padding: 1.5rem 1.5rem;
   margin-inline: auto;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +34,7 @@ body {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #f97300;
   font-weight: 20;
 }
@@ -72,7 +71,7 @@ main {
   width: 100%;
   margin-inline: auto;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 2rem;
   /* margin-top: 10rem; */
   justify-content: center;
@@ -82,22 +81,23 @@ main {
   display: flex;
   flex-direction: row;
   font-family: "QuickSand";
+  justify-content: space-between;
   color: white;
   margin-bottom: 25px;
+  width: 100%;
 }
 #about img {
-  width: 20rem;
+  width: 30%;
   height: auto;
   border-radius: 1.5rem;
+  max-width: 20rem;
 }
 .home-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-content: center;
   font-family: "QuickSand";
-  margin-left: 8rem;
-
+  width: 65%;
 }
 .home-content h2 {
   margin: 0px 0px 4px 0px;
@@ -167,11 +167,29 @@ button a{
   transition: width 0.3s ease, height 0.3s ease;
 }
 
-.accordion-content p {
-  margin: 0;
+@media screen and (max-width: 1209px){
+  .navbar{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-inline: auto;
+  }
+  #about{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #about img{
+    /* width: 15rem; */
+    margin: 30px 0px;
+  }
 }
 
-
+@media screen and (max-width: 1145px) {
+  .accordion{
+    flex-direction: column;
+  }
+}
 
 
 
